@@ -2,6 +2,7 @@ import React from "react";
 import {BrowserRouter,Routes,Route} from 'react-router-dom'
 import Table from "./Table";
 import MyForm from "./MyForm";
+import UserInfo from './UserInfo'
 
 function App() {
   return (
@@ -9,6 +10,9 @@ function App() {
         <BrowserRouter>
             <Routes>
                 <Route path='/' element={<MyForm/>}>
+
+                </Route>
+                <Route path='/userInfo/:id' element={<UserInfo/>}>
 
                 </Route>
             </Routes>

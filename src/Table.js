@@ -1,5 +1,6 @@
 import React , {useEffect} from 'react'
 import axios from 'axios'
+import {useNavigate} from 'react-router-dom'
 
 function Table({userList}){
     
@@ -14,9 +15,10 @@ function Table({userList}){
 
     // },[])
 
+const navigate=useNavigate()
+
 function viewMoreInfo(id){
-
-
+    navigate(`/userInfo/${id}`,)
 }    
     return(
         <div>

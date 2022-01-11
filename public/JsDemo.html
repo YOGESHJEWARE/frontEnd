@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js Destructuring</title>
+</head>
+<body>
+    <script>
+        // REST Parameters (...), Spread Operator(...), Destructuring
+
+        let person={
+            firstName:'John',
+            lastName:'Doe',
+            email:'abc@gmail.com',
+            city:'pune'
+        }
+        // console.log(person)
+        console.log(person.firstName)
+        // Speread operator
+        let {firstName,lastName,email,city}=person
+        console.log(firstName)
+        console.log(lastName)
+
+        function addNumbers(x,y,z){
+            return x+y+z
+        }
+        let numbers=[10,20,30]
+        
+        console.log(...numbers) & 10,20,30 // Destructuring
+        
+        console.log(addNumbers(...numbers)) &60
+
+        // Rest Parameters
+        function displayNames(name,...names){
+            return names
+        }
+        console.log(displayNames('abc','xyz','pqr'))
+
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+
+<body>
+    <script>
+        // declare multiple times and assign value mutiple times
+        var value=100
+        var value=200
+        console.log(value)
+        
+        // declare once and assign value multiple times
+        let value1=300
+        value1=400
+        console.log(value1)
+
+        let valueObj={
+            basic : 300,
+            tax   : 54,
+        }
+        console.log(valueObj)
+
+        valueObj={
+            basic:300,
+            tax  :54,
+            total:354
+        }
+        console.log(valueObj)
+
+        // can't be redecalared and can't assign value multiple times
+        const value2=500
+        // value2=600 &&not allowed
+        console.log(value2)
+
+        const person={
+            firstName:'John',
+            lastName :'Doha',
+            city:'Pune'
+        }
+        console.log(person)
+
+        // const person={
+        //     firstName:'Mac',
+        //      lastName:'Androse',
+        //          city:'Mumbai',
+        //          Pin:'4000256'
+        // }
+        // console.log(person) && not allowed
+
+        // person={
+        //     firstName:'Mac',
+        //      lastName:'Androse',
+        //          city:'Mumbai',
+        //          Pin:'4000256'
+        // }
+        // console.log(person) && not allowed
+
+
+    </script>
+    
+</body>
+</html>

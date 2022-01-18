@@ -19,7 +19,12 @@ function UserInfo(){
         
         .then(res=>{
             console.log(res.firstName)
-            setrecvUser(res)
+            const newObj={
+                firstName:res.firstName,
+                lastName:res.lastName,
+                city:res.city
+            }
+            setrecvUser(newObj)
             console.log(recvUser)
         })
     },[])
@@ -27,9 +32,9 @@ function UserInfo(){
     return(
         <div>
             <h1>User Info</h1>
-            {/* <p>FirstName:{user.firstName}</p>
-            <p>LastName:{user.lastName}</p>
-            <p>City:{user.city}</p> */}
+            <p>FirstName:{recvUser.firstName}</p>
+            <p>LastName:{recvUser.lastName}</p>
+            <p>City:{recvUser.city}</p>
         </div>
     )
 }

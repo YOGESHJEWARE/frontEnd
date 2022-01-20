@@ -18,14 +18,8 @@ function UserInfo(){
         .then(response=>response.data)
         
         .then(res=>{
-            console.log(res.firstName)
-            const newObj={
-                firstName:res.firstName,
-                lastName:res.lastName,
-                city:res.city
-            }
-            setrecvUser(newObj)
-            console.log(recvUser)
+            console.log(res)
+            setrecvUser({...res})
         })
     },[])
     

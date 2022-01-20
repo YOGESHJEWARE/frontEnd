@@ -20,6 +20,10 @@ const navigate=useNavigate()
 function viewMoreInfo(id){
     navigate(`/userInfo/${id}`,)
 }    
+function editInfo(id){
+    navigate(`/userInfo/${id}`,)
+}    
+
     return(
         <div>
             <h1>User Data</h1>
@@ -40,6 +44,7 @@ function viewMoreInfo(id){
                                 <td>{user.lastName}</td>
                                 <td>{user.city}</td>
                                 <td><button onClick={()=>viewMoreInfo(user._id)}>More Info</button></td>
+                                <td><button onClick={()=>editInfo(user._id)}>Edit</button></td>
                             </tr>
                         ))
                     }

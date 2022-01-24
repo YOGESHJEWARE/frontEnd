@@ -21,7 +21,8 @@ function viewMoreInfo(id){
     navigate(`/userInfo/${id}`,)
 }    
 function editInfo(id){
-    navigate(`/userInfo/${id}`,)
+    navigate(`/userEdit/${id}`,)
+    console.log("edit activated")
 }    
 
     return(

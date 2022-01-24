@@ -3,6 +3,7 @@ import {BrowserRouter,Routes,Route} from 'react-router-dom'
 import Table from "./Table";
 import MyForm from "./MyForm";
 import UserInfo from './UserInfo'
+import UserEdit from "./UserEdit";
 
 function App() {
   return (
@@ -10,15 +11,16 @@ function App() {
         <BrowserRouter>
             <Routes>
                 <Route path='/' element={<MyForm/>}>
-
                 </Route>
-                <Route path='/userInfo/:id' element={<UserInfo/>}>
-
+                 <Route path='/userInfo/:id' element={<UserInfo/>}>
+                </Route>
+                <Route path='/userEdit/:id' element={<UserEdit/>}>
                 </Route>
             </Routes>
+            
         </BrowserRouter>
 
-    </div>      
+</div>      
   );
 }
 

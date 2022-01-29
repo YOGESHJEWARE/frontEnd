@@ -27,8 +27,8 @@ function MyForm(){
     
     const sendData=()=>{
         console.log(user);
-        axios.post("http://localhost:8989/api/saveUser",user)
-        // axios.post("http://ec2-54-174-91-243.compute-1.amazonaws.com:8989/api/saveUser",user)
+        // axios.post("http://localhost:8989/api/saveUser",user)
+        axios.post("http://ec2-54-174-91-243.compute-1.amazonaws.com:8989/api/saveUser",user)
         
         .then(response=>response.data)
         .then(res=>{

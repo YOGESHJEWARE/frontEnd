@@ -32,7 +32,7 @@ function UserEdit(){
     }
     const sendData=()=>{
         console.log(recvUser);
-        axios.put("http://localhost:8989/api/saveUser",recvUser)
+        axios.put(`http://localhost:8989/api/editUser/${id}`,recvUser)
         .then(response=>response.data)
         .then(res=>{
             console.log("Data Updated")

@@ -22,3 +22,11 @@ echo "deb [ arch=amd64,arm64 ] https://repo.mongodb.org/apt/ubuntu focal/mongodb
 sudo apt update
 sudo apt-get install -y mongodb-org
 sudo systemctl start mongod
+
+usename = ubuntu
+sudo rm -rf build  - to remove any file
+https://stackoverflow.com/questions/41195952/updating-nodejs-on-ubuntu-16-04 &&Update Node Version
+sudo npm cache clean -f
+sudo apt-get remove nodejs
+sudo apt-get remove npm
+https://computingforgeeks.com/install-node-js-14-on-ubuntu-debian-linux/ &&update nodejs
